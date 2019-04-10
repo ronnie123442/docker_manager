@@ -12,7 +12,7 @@ const repoObject = Repo.create({
   official: false,
   path: "/c/discourse",
   pretty_version: "v2.2.0.beta6 +98",
-  url: "https://github.com/discourse/discourse",
+  url: "https://github.com/ronnie123442/discourse",
   version: "8f65e4f",
   latest: {
     commits_behind: 3,
@@ -31,7 +31,7 @@ const managerRepo = Repo.create({
   official: true,
   path: "/c/discourse/plugins/docker_manager",
   pretty_version: null,
-  url: "https://github.com/discourse/docker_manager",
+  url: "https://github.com/ronnie123442/docker_manager",
   version: "0b1fb4b",
   latest: {
     commits_behind: 0,
@@ -68,7 +68,7 @@ module("Integration | Component | repo-status", function(hooks) {
     );
     assert.equal(
       find("li.new-commits a").href.trim(),
-      "https://github.com/discourse/discourse/compare/8f65e4f...2b006c0",
+      "https://github.com/ronnie123442/discourse/compare/8f65e4f...2b006c0",
       "links to GitHub diff page"
     );
 
